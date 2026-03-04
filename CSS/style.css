@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #0a2746, #0a1931); /* elegan gelap */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    color:white;
+}
+
+/* Container tengah */
+.container{
+    text-align:center;
+    width:90%;
+    max-width:400px;
+    padding:20px;
+}
+
+/* Foto profil bulat kecil */
+.profile-img{
+    width: 200px;            /* ukuran kecil */
+    height:200px;           /* tinggi sama lebar */
+    border-radius:50%;      /* bulat sempurna */
+    object-fit:cover;       /* gambar proporsional */
+    border:2px solid white;  /* tipis elegan */
+    margin:0 auto 20px;     /* center + jarak bawah */
+    display:block;
+    box-shadow:0 4px 12px rgba(0,0,0,0.3); /* shadow halus */
+    transition:0.3s;
+}
+
+.profile-img:hover{
+    transform: scale(1.05); /* efek hover minimalis */
+}
+
+/* Nama & subtitle */
+h1{
+    font-weight:700;
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+p{
+    font-weight:300;
+    margin-bottom:30px;
+    opacity:0.7;
+}
+
+/* Tombol link */
+.link{
+    display:block;
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    margin:15px 0;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+    backdrop-filter:blur(10px);
+    font-weight:500;
+}
+
+.link:hover{
+    background: rgba(255, 255, 255, 0.973);
+    color:black;
+    transform:scale(1.05);
+}
+
+/* BODY stretch full height */
+body{
+    display:flex;
+    flex-direction:column; /* susun konten vertikal */
+    min-height:100vh;      /* tinggi minimal 100% viewport */
+    margin:0;
+    background: linear-gradient(135deg,#0a2746,#0a1931);
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+
+/* Container fleksibel supaya menempati sisa ruang */
+.container{
+    flex:1;  /* container akan stretch, mendorong footer ke bawah */
+    text-align:center;
+    width:90%;
+    max-width:400px;
+    padding:20px;
+}
+
+/* Footer tetap di bawah */
+footer{
+    text-align:center;
+    padding:20px 0;
+    font-size:14px;
+    color:rgba(255,255,255,0.6);
+    border-top:1px solid rgba(255,255,255,0.1);
+}
